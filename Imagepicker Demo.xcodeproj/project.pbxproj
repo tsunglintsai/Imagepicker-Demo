@@ -18,6 +18,8 @@
 		33694C9017022EA000DAB29D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33694C8F17022EA000DAB29D /* Default-568h@2x.png */; };
 		33694C9317022EA000DAB29D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33694C9117022EA000DAB29D /* MainStoryboard.storyboard */; };
 		33694C9617022EA000DAB29D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33694C9517022EA000DAB29D /* ViewController.m */; };
+		33694C9D17022FEE00DAB29D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33694C9C17022FEE00DAB29D /* MobileCoreServices.framework */; };
+		33694CA51702919900DAB29D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33694CA41702919900DAB29D /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		33694C9217022EA000DAB29D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		33694C9417022EA000DAB29D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		33694C9517022EA000DAB29D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		33694C9C17022FEE00DAB29D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		33694CA41702919900DAB29D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33694CA51702919900DAB29D /* MediaPlayer.framework in Frameworks */,
+				33694C9D17022FEE00DAB29D /* MobileCoreServices.framework in Frameworks */,
 				33694C7A17022EA000DAB29D /* UIKit.framework in Frameworks */,
 				33694C7C17022EA000DAB29D /* Foundation.framework in Frameworks */,
 				33694C7E17022EA000DAB29D /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +79,8 @@
 		33694C7817022EA000DAB29D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				33694CA41702919900DAB29D /* MediaPlayer.framework */,
+				33694C9C17022FEE00DAB29D /* MobileCoreServices.framework */,
 				33694C7917022EA000DAB29D /* UIKit.framework */,
 				33694C7B17022EA000DAB29D /* Foundation.framework */,
 				33694C7D17022EA000DAB29D /* CoreGraphics.framework */,
@@ -83,8 +91,6 @@
 		33694C7F17022EA000DAB29D /* Imagepicker Demo */ = {
 			isa = PBXGroup;
 			children = (
-				33694C8817022EA000DAB29D /* AppDelegate.h */,
-				33694C8917022EA000DAB29D /* AppDelegate.m */,
 				33694C9117022EA000DAB29D /* MainStoryboard.storyboard */,
 				33694C9417022EA000DAB29D /* ViewController.h */,
 				33694C9517022EA000DAB29D /* ViewController.m */,
@@ -96,6 +102,8 @@
 		33694C8017022EA000DAB29D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				33694C8817022EA000DAB29D /* AppDelegate.h */,
+				33694C8917022EA000DAB29D /* AppDelegate.m */,
 				33694C8117022EA000DAB29D /* Imagepicker Demo-Info.plist */,
 				33694C8217022EA000DAB29D /* InfoPlist.strings */,
 				33694C8517022EA000DAB29D /* main.m */,
@@ -263,6 +271,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Imagepicker Demo/Imagepicker Demo-Prefix.pch";
 				INFOPLIST_FILE = "Imagepicker Demo/Imagepicker Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -274,6 +283,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Imagepicker Demo/Imagepicker Demo-Prefix.pch";
 				INFOPLIST_FILE = "Imagepicker Demo/Imagepicker Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
